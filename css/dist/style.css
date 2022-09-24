@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Chivo:300,300italic,regular,italic,700,700italic,900,800italic);
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  height: 900px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #121725;
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  padding: 130px 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.main {
+  background-image: url(../images/desktop/image-host.jpg);
+  background-repeat: no-repeat;
+  height: 640px;
+  background-position: right;
+  position: relative;
+}
+.main__logo {
+  width: 135px;
+  height: 56px;
+  position: absolute;
+  top: -28px;
+  left: 135px;
+}
+.main__content {
+  position: absolute;
+  max-width: 723px;
+  height: 509px;
+  background: #121725;
+  bottom: 0;
+  left: 135px;
+  padding: 88px 58px 0 0;
+}
+.main__title {
+  font-size: 52px;
+  line-height: 62px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.main__title span {
+  color: #59e37b;
+}
+.main__text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #96e792;
+  max-width: 445px;
+  margin-bottom: 40px;
+}
+.main__form {
+  max-width: 427px;
+  position: relative;
+  margin-bottom: 64px;
+}
+.main__form input {
+  border: none;
+  outline: none;
+  font-family: "Chivo", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.main__form input[type=email] {
+  background: #e7d3d3;
+  border-radius: 28px;
+  width: 100%;
+  height: 56px;
+  padding: 14px 32px;
+  color: #598275;
+}
+.main__form input[type=submit] {
+  background: #499c76;
+  box-shadow: #121725;
+  border-radius: 28px;
+  width: 162px;
+  height: 46px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  transition: all 1s;
+}
+.main__form input[type=submit]:hover {
+  background: #95ec87;
+}
+.main__inner-img {
+  width: 548px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__dots {
+  background-image: url(../images/desktop/bg-pattern-dots.svg);
+  width: 232px;
+  height: 104px;
+  position: absolute;
+  right: 0;
+  bottom: -52px;
+}
+
+@media (max-width: 1250px) {
+  .main__content {
+    bottom: -52px;
+  }
+  .main__dots {
+    top: 100%;
+  }
+}
+@media (max-width: 1050px) {
+  .box {
+    height: 1024px;
+    max-width: 900px;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 790px;
+  }
+
+  .main {
+    background-image: url(../images/tablet/image-host.jpg);
+    height: 767px;
+  }
+  .main__logo {
+    top: 50px;
+    left: 39px;
+  }
+  .main__content {
+    max-width: 635px;
+    height: 509px;
+    left: 39px;
+    padding: 53px 0 0 0;
+  }
+  .main__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 31px;
+  }
+  .main__dots {
+    right: auto;
+    left: 39px;
+    top: auto;
+    bottom: -257px;
+  }
+}
+@media (max-width: 800px) {
+  .box {
+    height: 1024px;
+    max-width: 768px;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 690px;
+  }
+}
+@media (max-width: 450px) {
+  .box {
+    max-width: 375px;
+    height: 667px;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 327px;
+  }
+
+  .main {
+    background-image: url(../images/mobile/image-host.jpg);
+    height: 667px;
+  }
+  .main__logo {
+    top: 62px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1000;
+  }
+  .main__content {
+    max-width: 100%;
+    height: 100%;
+    background: rgba(19, 6, 37, 0.804);
+    left: 0;
+    bottom: 0;
+    padding: 175px 0 0 0;
+  }
+  .main__title {
+    font-size: 26px;
+    line-height: 38px;
+    margin-bottom: 16px;
+  }
+  .main__text {
+    width: 327px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: 0 auto 33px;
+  }
+  .main__form {
+    position: absolute;
+    bottom: 94px;
+    left: 50%;
+    transform: translateX(-50%);
+    widows: 327px;
+    margin: 0;
+  }
+  .main__inner-img {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main__form input[type=email] {
+    margin-bottom: 16px;
+  }
+  .main__form input[type=submit] {
+    width: 326px;
+    position: static;
+    top: 5px;
+    right: 5px;
+    transition: all 1s;
+  }
+  .main__dots {
+    display: none;
+  }
+}
